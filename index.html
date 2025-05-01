@@ -1,43 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Restaurant 3D Model</title>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <style>
-      body {
-        margin: 0;
-        background-color: #111;
-        color: white;
-        font-family: sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      header {
-        padding: 1rem;
-        font-size: 2rem;
-      }
-      model-viewer {
-        width: 100vw;
-        height: 90vh;
-        background: #222;
-      }
-    </style>
-  </head>
-  <body>
-    <header>Restaurant 3D Model</header>
-    <model-viewer
-      src="4f727d93-7a6d-45f4-a9c8-ed77a4fb50d8.glb"
-      alt="3D model of a restaurant"
-      auto-rotate
-      camera-controls
-      ar
-      ar-modes="webxr scene-viewer quick-look"
-      shadow-intensity="1"
-      exposure="1"
-    >
-    </model-viewer>
-  </body>
-</html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snacks - Wafer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+      color: #333;
+      text-align: center;
+    }
 
+    header {
+      background-color: #ff7043;
+      color: white;
+      padding: 1.5rem 0;
+      font-size: 2rem;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-top: 1rem;
+      font-size: 1.8rem;
+      color: #d84315;
+    }
+
+    .model-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem;
+      flex-direction: column;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 420px;
+      height: 600px;
+      border: none;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+
+    p {
+      font-size: 14px;
+      margin-top: 10px;
+      color: #555;
+    }
+
+    a {
+      color: #ef6c00;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>Snacks</header>
+  <h2>Wafer</h2>
+  <div class="model-container">
+    <div class="sketchfab-embed-wrapper">
+      <iframe title="snacks" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
+        allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+        execution-while-out-of-viewport execution-while-not-rendered web-share
+        src="https://sketchfab.com/models/be20457b7af6438db2c761244279946a/embed">
+      </iframe>
+      <p>
+        <a href="https://sketchfab.com/3d-models/snacks-be20457b7af6438db2c761244279946a" target="_blank">View on Sketchfab</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
